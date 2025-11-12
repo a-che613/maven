@@ -55,7 +55,7 @@ export function Navigation() {
               PRODUCTS
             </Link>
             <Link
-              href="/blog"
+              href="#blog"
               className="text-white hover:text-gold transition-colors text-sm uppercase tracking-wider"
             >
               BLOG
