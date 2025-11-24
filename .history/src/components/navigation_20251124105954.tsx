@@ -66,24 +66,24 @@ export function Navigation() {
             >
               SEEDS
             </Link>
-            {/* <Link
+            <Link
               href="#maven-store"
               className="text-white hover:text-gold transition-colors text-sm uppercase tracking-wider"
             >
               MAVEN STORE
-            </Link> */}
+            </Link>
             <Link
               href="/insiders"
               className="text-white hover:text-gold transition-colors text-sm uppercase tracking-wider"
             >
               INSIDERS
             </Link>
-            {/* <Link
+            <Link
               href="#apparel"
               className="text-white hover:text-gold transition-colors text-sm uppercase tracking-wider"
             >
               APPAREL
-            </Link> */}
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
