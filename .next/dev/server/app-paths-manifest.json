@@ -1,5 +1,9 @@
 {
-  "/insiders/page": "app/insiders/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/checkout/route": "app/api/checkout/route.js",
+  "/auth/page": "app/auth/page.js",
   "/page": "app/page.js",
-  "/seeds/page": "app/seeds/page.js"
+  "/products/page": "app/products/page.js",
+  "/seeds/page": "app/seeds/page.js",
+  "/seeds/store/page": "app/seeds/store/page.js"
 }
