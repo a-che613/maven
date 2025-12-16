@@ -145,21 +145,25 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$nodemailer$2
 async function POST(request) {
     try {
         const { userEmail, cart, total } = await request.json();
-        // Create reusable transporter object using Gmail SMTP
-        let transporter = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$nodemailer$2f$lib$2f$nodemailer$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].createTransport({
-            service: 'gmail',
+        const transporter = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$nodemailer$2f$lib$2f$nodemailer$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].createTransport({
+            host: "smtp.zoho.com",
+            port: 465,
+            secure: true,
             auth: {
-                user: 'codecamp316@gmail.com',
-                pass: 'rsqwmyyjlwedahmc'
+                user: "support@mavenrnvn.com",
+                pass: "9B466UMUziVU"
+            },
+            tls: {
+                rejectUnauthorized: false
             }
         });
         // Format cart items for email
-        const cartItems = cart.map((item)=>`${item.quantity}x ${item.name} - $${item.price.toFixed(2)} each`).join('\n');
+        const cartItems = cart.map((item)=>`${item.quantity}x ${item.name} - $${item.price.toFixed(2)} each`).join("\n");
         // Send mail with defined transport object
         let info = await transporter.sendMail({
             from: '"Maven Order System" <noreply@maven.com>',
-            to: 'azienwi.che@gmail.com',
-            subject: 'New Order Request',
+            to: "azienwi.che@gmail.com",
+            subject: "New Order Request",
             text: `New order request from: ${userEmail}
 
 Items Ordered:
@@ -173,27 +177,27 @@ Please contact the customer to complete the transaction.`,
         <p><strong>Customer Email:</strong> ${userEmail}</p>
         <h3>Items Ordered:</h3>
         <ul>
-          ${cart.map((item)=>`<li>${item.quantity}x ${item.name} - $${item.price.toFixed(2)} each</li>`).join('')}
+          ${cart.map((item)=>`<li>${item.quantity}x ${item.name} - $${item.price.toFixed(2)} each</li>`).join("")}
         </ul>
         <h3>Total: $${total.toFixed(2)}</h3>
         <p>Please contact the customer to complete the transaction.</p>
       `
         });
-        console.log('Message sent: %s', info.messageId);
+        console.log("Message sent: %s", info.messageId);
         // Clear the cart after successful checkout
         const response = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
             success: true
         });
-        response.cookies.set('cart', '[]', {
-            path: '/'
+        response.cookies.set("cart", "[]", {
+            path: "/"
         });
         return response;
         //TURBOPACK unreachable
         ;
     } catch (error) {
-        console.error('Error sending email:', error);
+        console.error("Error sending email:", error);
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
-            error: 'Failed to process checkout'
+            error: "Failed to process checkout"
         }, {
             status: 500
         });

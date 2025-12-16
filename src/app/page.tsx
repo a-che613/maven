@@ -16,10 +16,10 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/30" />
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-20 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+        {/* <div className="absolute bottom-20 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
           <span className="text-white text-sm uppercase tracking-widest">Scroll</span>
           <div className="w-px h-16 bg-white/50" />
-        </div>
+        </div> */}
       </section>
 
       {/* Company Intro Section */}

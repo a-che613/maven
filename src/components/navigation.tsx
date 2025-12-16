@@ -20,7 +20,7 @@ export function Navigation() {
               FIND US
             </Link>
             <Link
-              href="#order"
+              href="/products"
               className="px-6 py-2 bg-white text-black text-sm font-medium rounded-full hover:bg-white/90 transition-colors uppercase tracking-wide"
             >
               ORDER NOW

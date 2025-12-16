@@ -794,411 +794,94 @@ function ProductsPage({ isVerified, onVerify }) {
     _s();
     const { addToCart } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$CartContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCart"])();
     const [filter, setFilter] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("all");
-    const products = [
-        // -----------------------------
-        // 🌿 FLOWER (10 items)
-        // -----------------------------
-        {
-            id: "f1",
-            name: "AstroCandyTHCaFlower | Hybrid",
-            category: "flower",
-            price: 30,
-            image: "/products/flowers/AstroCandyTHCaFlower-Hybrid-30.avif"
-        },
-        {
-            id: "f2",
-            name: "Blue Skunk THCa Flower | Indica",
-            category: "flower",
-            price: 35,
-            image: "/products/flowers/BlueSkunkTHCaFlower-35.avif"
-        },
-        {
-            id: "f3",
-            name: "Cadillac Rainbows THCa flower | Hybrid",
-            category: "flower",
-            price: 30,
-            image: "/products/flowers/CadillacRainbowsTHCaFlower-Hybrid-30.avif"
-        },
-        {
-            id: "f4",
-            name: "Dior THCa Exotic Flower | Hybrid",
-            category: "flower",
-            price: 35,
-            image: "/products/flowers/DiorTHCaExoticFlower-Hybrid-35.avif"
-        },
-        {
-            id: "f5",
-            name: "Gary Payton THCa Flower | Hybrid",
-            category: "flower",
-            price: 35,
-            image: "/products/flowers/GaryPaytonTHCaFlower-Hybrid-35.avif"
-        },
-        {
-            id: "f6",
-            name: "Gelato Cake THCP Infused Flower | Indica",
-            category: "flower",
-            price: 30,
-            image: "/products/flowers/GelatoCakeTHCPInfusedFlower-30.avif"
-        },
-        {
-            id: "f7",
-            name: "Gelonade THCa Exotic Flower | Indica",
-            category: "flower",
-            price: 35,
-            image: "/products/flowers/GelonadeTHCaExoticFlower-35.avif"
-        },
-        {
-            id: "f8",
-            name: "London Jealousy THCa Flower | Indica",
-            category: "flower",
-            price: 35,
-            image: "/products/flowers/LondonJealousyTHCaFlower-35.avif"
-        },
-        {
-            id: "f9",
-            name: "Oreoz THCa Flower | Hybrid",
-            category: "flower",
-            price: 30,
-            image: "/products/flowers/OreozTHCaFlower-Hybrid-30.avif"
-        },
-        {
-            id: "f10",
-            name: "Purple Kush THCa Flower | Indica",
-            category: "flower",
-            price: 30,
-            image: "/products/flowers/PurpleKushTHCaFlower-30.avif"
-        },
-        {
-            id: "101",
-            name: "Sugar Tartz THCa Exotic Flower | Hybrid",
-            category: "flower",
-            price: 35.0,
-            image: "/products/flowers/SugarTartzTHCaExoticFlower-35.avif"
-        },
-        {
-            id: "102",
-            name: "Trap Juice THCa Exotic Flower | Hybrid",
-            category: "flower",
-            price: 35.0,
-            image: "/products/flowers/TrapJuiceTHCaExoticFlower-35.avif"
-        },
-        {
-            id: "103",
-            name: "Jedi Cookies THCa Flower | Hybrid",
-            category: "flower",
-            price: 35.0,
-            image: "/products/flowers/JediCookiesTHCaFlower-Hybrid-35.avif"
-        },
-        {
-            id: "104",
-            name: "Jellie Cake THCa Flower | Hybrid",
-            category: "flower",
-            price: 35.0,
-            image: "/products/flowers/JellieCakeTHCaFlower-hybrid-35.avif"
-        },
-        {
-            id: "105",
-            name: "Gorilla Bomb THCa Flower | Sativa",
-            category: "flower",
-            price: 35.0,
-            image: "/products/flowers/GorillaBombTHCaFlower-sativa-35.avif"
-        },
-        {
-            id: "106",
-            name: "Peyote Kush THCa Flower | Indica",
-            category: "flower",
-            price: 35.0,
-            image: "/products/flowers/PeyoteKushTHCaFlower-indica-35.avif"
-        },
-        {
-            id: "107",
-            name: "Yoda Candy THCa Flower | Sativa",
-            category: "flower",
-            price: 35.0,
-            image: "/products/flowers/YodaCandyTHCaFlower-Sativa-35.avif"
-        },
-        {
-            id: "108",
-            name: "Wizard Tress THCa Flower | Indica",
-            category: "flower",
-            price: 35.0,
-            image: "/products/flowers/WizardTreesTHCaFlower-Indica-35.avif"
-        },
-        // {
-        //   id: "109",
-        //   name: "RS11 (Rainbow Sherbet #11)",
-        //   category: "flower",
-        //   price: 295.0,
-        //   image: "/placeholder.svg",
-        //   description:
-        //     "Flavorful hybrid combining sweet fruit with creamy undertones.",
-        // },
-        // {
-        //   id: "110",
-        //   name: "Super Runtz",
-        //   category: "flower",
-        //   price: 285.0,
-        //   image: "/placeholder.svg",
-        //   description: "Premium Runtz variant with strong candy-like flavor.",
-        // },
-        // {
-        //   id: "111",
-        //   name: "Blackberry Caviar",
-        //   category: "flower",
-        //   price: 310.0,
-        //   image: "/placeholder.svg",
-        //   description: "Luxurious exotic strain with rich berry flavor.",
-        // },
-        // {
-        //   id: "112",
-        //   name: "Apple Fritter",
-        //   category: "flower",
-        //   price: 270.0,
-        //   image: "/placeholder.svg",
-        //   description: "Sweet dessert-like aroma with balanced hybrid effects.",
-        // },
-        // -----------------------------
-        // 🚬 PRE-ROLLS (10 items)
-        // -----------------------------
-        {
-            id: "11",
-            name: "Cookies 2g Cinnamon Milk THCa Blunt | Indica",
-            category: "pre-rolls",
-            price: 30.0,
-            image: "/products/pre-rolls/Cookies2gCinnamonMilkTHCaBlunt-Indica-30.avif"
-        },
-        {
-            id: "12",
-            name: "Cookies Cereal Milk Slims | 5 count",
-            category: "pre-rolls",
-            price: 40.0,
-            image: "/products/pre-rolls/CookiesCerealMilkSlims-5Count-40.avif"
-        },
-        {
-            id: "13",
-            name: "Cookies Honey Bun THCa Pre Roll | 1g",
-            category: "pre-rolls",
-            price: 12.0,
-            image: "/products/pre-rolls/CookiesHoneyBunTHCaPreRoll-1g-12.avif"
-        },
-        {
-            id: "14",
-            name: "Freak Brothers Gelato THCP Infused Doobie | 1.5g",
-            category: "pre-rolls",
-            price: 20.0,
-            image: "/products/pre-rolls/FreakBrothersGelatoTHCPInfusedDoobie-1.5g-20.avif"
-        },
-        {
-            id: "15",
-            name: "Habit Jack The Ripper THCa Pre Rolls | Sativa",
-            category: "pre-rolls",
-            price: 25.0,
-            image: "/products/pre-rolls/HabitJackTheRipperTHCaPreRolls-sativa-25.avif"
-        },
-        {
-            id: "16",
-            name: "Habit Tigers Blood OG THCa Pre Rolls | Indica | Indica",
-            category: "pre-rolls",
-            price: 25.0,
-            image: "/products/pre-rolls/HabitTigersBloodOGTHCaPreRolls-Indica-25.avif"
-        },
-        {
-            id: "17",
-            name: "Silver Haze THCa Pre Rolls | 2 count | Sativa",
-            category: "pre-rolls",
-            price: 20.0,
-            image: "/products/pre-rolls/SilverHazeTHCaPreRolls-2Count-Sativa-20.avif"
-        },
-        {
-            id: "18",
-            name: "Sky Walker THCa Pre Rolls | 2 count | Indica",
-            category: "pre-rolls",
-            price: 20.0,
-            image: "/products/pre-rolls/SkyWalkerTHCaPreRolls-2Count-Indica.avif"
-        },
-        {
-            id: "19",
-            name: "Wedding Cake Delta 8 THC Pre Roll | King Sized",
-            category: "pre-rolls",
-            price: 10.0,
-            image: "/products/pre-rolls/WeddingCakeDelta8THCPreRoll-KingSized-10.avif",
-            description: "Sweet berry aroma with calming effects."
-        },
-        // {
-        //   id: "20",
-        //   name: "Classic Heritage Roll",
-        //   category: "pre-rolls",
-        //   price: 160.0,
-        //   image: "/placeholder.svg",
-        //   description: "Rich earthy profile crafted with premium strains.",
-        // },
-        // -----------------------------
-        // 🧪 CONCENTRATES (10 items)
-        // -----------------------------
-        {
-            id: "20",
-            name: "Cookies Bernierhana Butter THCa Dab",
-            category: "concentrates",
-            price: 30.0,
-            image: "/products/concentrates/CookiesBernierhanaButterTHCaDab-30.avif"
-        },
-        {
-            id: "21",
-            name: "Cookies Laughing Gas THCa Dab",
-            category: "concentrates",
-            price: 35.0,
-            image: "/products/concentrates/CookiesLaughingGasTHCaDab-35.avif"
-        },
-        {
-            id: "22",
-            name: "Cookies THCA Moonrocks Pac-Main",
-            category: "concentrates",
-            price: 50.0,
-            image: "/products/concentrates/CookiesTHCAMoonrocksPac-Man-50.avif"
-        },
-        {
-            id: "23",
-            name: "Habit Green Crack Live Resin Diamond Sauce | 1g",
-            category: "concentrates",
-            price: 35.0,
-            image: "/products/concentrates/HabitGreenCrackLiveResinDiamondSauce-1g-35.avif"
-        },
-        {
-            id: "24",
-            name: "Habit Jack Here Live Resin Diamond Sauce | 1g",
-            category: "concentrates",
-            price: 35.0,
-            image: "/products/concentrates/HabitJackHererLiveResinDiamondSauce-1g-35.avif"
-        },
-        {
-            id: "25",
-            name: "Habit Kust Mints THCa Wax | 1g",
-            category: "concentrates",
-            price: 30.0,
-            image: "/products/concentrates/HabitKustMintsTHCaWax-1g-30.avif"
-        },
-        {
-            id: "26",
-            name: "Habit Original Z Live Resin Diamond Sauce | 1g",
-            category: "concentrates",
-            price: 35.0,
-            image: "/products/concentrates/HabitOriginalZLiveResinDiamondSauce-1g-35.avif"
-        },
-        {
-            id: "27",
-            name: "Habit Super Boof Live Resin Diamond Sauce | 1g",
-            category: "concentrates",
-            price: 35.0,
-            image: "/products/concentrates/HabitSuperBoofLiveResinDiamondSauce-1g-35.avif"
-        },
-        {
-            id: "28",
-            name: "Habit THCA Snow Caps | 3.5g",
-            category: "concentrates",
-            price: 50.0,
-            image: "/products/concentrates/HabitTHCASnowCaps-3.5g-40.avif"
-        },
-        {
-            id: "29",
-            name: "THCA Moon Rocks",
-            category: "concentrates",
-            price: 45.0,
-            image: "/products/concentrates/THCAMoonRocks-45.avif"
-        },
-        // -----------------------------
-        // 💨 VAPES (10 items)
-        // -----------------------------
-        {
-            id: "30",
-            name: "AUXO Calent",
-            category: "vapes",
-            price: 100.0,
-            image: "/products/vapes/AUXOCalent-100.avif"
-        },
-        {
-            id: "31",
-            name: "Cookies x G Pen Micro + Vape",
-            category: "vapes",
-            price: 80.0,
-            image: "/products/vapes/CookiesXGPENMicro+Vape-80.avif"
-        },
-        {
-            id: "32",
-            name: "G Pen Micro + Vape",
-            category: "vapes",
-            price: 80.0,
-            image: "/products/vapes/GPenMicro+Vape-80.avif"
-        },
-        {
-            id: "33",
-            name: "GRAV Gem-In-Eye",
-            category: "vapes",
-            price: 40.0,
-            image: "/products/vapes/GRAVGem-in-Eye-40.avif"
-        },
-        {
-            id: "34",
-            name: "Groove Cara",
-            category: "vapes",
-            price: 25.0,
-            image: "/products/vapes/GrooveCara-25.avif"
-        },
-        {
-            id: "35",
-            name: "Lemonnade x G Pen Micro + Vape Pen",
-            category: "vapes",
-            price: 80.0,
-            image: "/products/vapes/LemonnadeXGPenMicro+VapePen-80.avif"
-        },
-        {
-            id: "36",
-            name: "Phantom Signature 2-in-1 Oil & Wax",
-            category: "vapes",
-            price: 100.0,
-            image: "/products/vapes/PhantomSignature2-in-1Oil&Wax.avif"
-        },
-        {
-            id: "37",
-            name: "PuffCo Peak Smart Rig",
-            category: "vapes",
-            price: 80.0,
-            image: "/products/vapes/PuffCoPeakSmartRig.avif"
-        },
-        {
-            id: "38",
-            name: "PuffCo Plus 3.0",
-            category: "vapes",
-            price: 90.0,
-            image: "/products/vapes/PuffCoPlus3.0-90.avif"
-        },
-        {
-            id: "39",
-            name: "PuffCo Proxy",
-            category: "vapes",
-            price: 300.0,
-            image: "/products/vapes/PuffCoProxy-300.avif"
-        }
-    ];
     const categories = [
         {
             label: "All",
             value: "all"
         },
         {
-            label: "Flower",
-            value: "flower"
+            label: "Edibles",
+            value: "edibles"
         },
         {
-            label: "Pre-Rolls",
-            value: "pre-rolls"
+            label: "Cookies Melrose",
+            value: "cookies-melrose"
+        },
+        {
+            label: "Cartridges",
+            value: "cartridges"
+        },
+        {
+            label: "Vape Pens",
+            value: "vape-pens"
+        },
+        {
+            label: "CBD Gummies",
+            value: "cbd-gummies"
+        },
+        {
+            label: "CBD Oil",
+            value: "cbd-oil"
         },
         {
             label: "Concentrates",
             value: "concentrates"
         },
         {
-            label: "Vapes",
-            value: "vapes"
+            label: "Magic Mushrooms",
+            value: "magic-mushrooms"
+        },
+        {
+            label: "Pills",
+            value: "pills"
+        },
+        {
+            label: "Prerolls",
+            value: "prerolls"
+        },
+        {
+            label: "Hash",
+            value: "hash"
+        },
+        {
+            label: "Delta 8 Cartridges",
+            value: "delta-8-cartridges"
+        },
+        {
+            label: "Delta 8 Disposable Carts",
+            value: "delta-8-disposable-carts"
+        },
+        {
+            label: "Crumble",
+            value: "crumble"
+        },
+        {
+            label: "Cannabis Seeds",
+            value: "cannabis-seeds"
+        },
+        {
+            label: "Dried Psilocybin Mushrooms",
+            value: "dried-psilocybin-mushrooms"
+        },
+        {
+            label: "Hybrid",
+            value: "hybrid"
+        },
+        {
+            label: "Indica Strain",
+            value: "indica-strain"
+        },
+        {
+            label: "Runtz",
+            value: "runtz"
+        },
+        {
+            label: "Sativa Strain",
+            value: "sativa-strain"
+        },
+        {
+            label: "Wax",
+            value: "wax"
         }
     ];
     const filteredProducts = filter === "all" ? products : products.filter((p)=>p.category === filter);
@@ -1215,7 +898,7 @@ function ProductsPage({ isVerified, onVerify }) {
                             children: "STORE"
                         }, void 0, false, {
                             fileName: "[project]/src/app/products/page.tsx",
-                            lineNumber: 428,
+                            lineNumber: 53,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1226,12 +909,12 @@ function ProductsPage({ isVerified, onVerify }) {
                                     children: cat.label
                                 }, cat.value, false, {
                                     fileName: "[project]/src/app/products/page.tsx",
-                                    lineNumber: 435,
+                                    lineNumber: 60,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/app/products/page.tsx",
-                            lineNumber: 433,
+                            lineNumber: 58,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1248,12 +931,12 @@ function ProductsPage({ isVerified, onVerify }) {
                                                 className: "object-cover group-hover:scale-105 transition-transform duration-300"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/products/page.tsx",
-                                                lineNumber: 454,
+                                                lineNumber: 79,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/products/page.tsx",
-                                            lineNumber: 453,
+                                            lineNumber: 78,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1261,7 +944,7 @@ function ProductsPage({ isVerified, onVerify }) {
                                             children: product.name
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/products/page.tsx",
-                                            lineNumber: 462,
+                                            lineNumber: 87,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1269,7 +952,7 @@ function ProductsPage({ isVerified, onVerify }) {
                                             children: product.description
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/products/page.tsx",
-                                            lineNumber: 466,
+                                            lineNumber: 91,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1283,7 +966,7 @@ function ProductsPage({ isVerified, onVerify }) {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/products/page.tsx",
-                                                    lineNumber: 471,
+                                                    lineNumber: 96,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1297,51 +980,51 @@ function ProductsPage({ isVerified, onVerify }) {
                                                     children: "Add to Bag"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/products/page.tsx",
-                                                    lineNumber: 474,
+                                                    lineNumber: 99,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/products/page.tsx",
-                                            lineNumber: 470,
+                                            lineNumber: 95,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, product.id, true, {
                                     fileName: "[project]/src/app/products/page.tsx",
-                                    lineNumber: 452,
+                                    lineNumber: 77,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/app/products/page.tsx",
-                            lineNumber: 450,
+                            lineNumber: 75,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/products/page.tsx",
-                    lineNumber: 427,
+                    lineNumber: 52,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/products/page.tsx",
-                lineNumber: 426,
+                lineNumber: 51,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$cart$2f$FloatingCartButton$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/products/page.tsx",
-                lineNumber: 493,
+                lineNumber: 118,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$cart$2f$Cart$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/products/page.tsx",
-                lineNumber: 494,
+                lineNumber: 119,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/products/page.tsx",
-        lineNumber: 425,
+        lineNumber: 50,
         columnNumber: 5
     }, this);
 }
@@ -1360,12 +1043,12 @@ function ProductsListing() {
             onVerify: ()=>setIsVerified(true)
         }, void 0, false, {
             fileName: "[project]/src/app/products/page.tsx",
-            lineNumber: 504,
+            lineNumber: 129,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/products/page.tsx",
-        lineNumber: 503,
+        lineNumber: 128,
         columnNumber: 5
     }, this);
 }

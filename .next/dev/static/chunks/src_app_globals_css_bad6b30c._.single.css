@@ -81,6 +81,10 @@
     --color-green-500: #00c758;
     --color-green-600: #00a544;
     --color-green-700: #008138;
+    --color-emerald-50: #ecfdf5;
+    --color-emerald-500: #00bb7f;
+    --color-emerald-600: #009767;
+    --color-emerald-700: #007956;
     --color-cyan-400: #00d2ef;
     --color-blue-400: #54a2ff;
     --color-blue-500: #3080ff;
@@ -163,6 +167,10 @@
       --color-green-500: lab(70.5521% -66.5147 45.8073);
       --color-green-600: lab(59.0978% -58.6621 41.2579);
       --color-green-700: lab(47.0329% -47.0239 31.4788);
+      --color-emerald-50: lab(97.8462% -6.94966 1.85487);
+      --color-emerald-500: lab(66.9756% -58.27 19.5419);
+      --color-emerald-600: lab(55.0481% -49.9246 15.93);
+      --color-emerald-700: lab(44.4871% -41.0396 11.0361);
       --color-cyan-400: lab(76.6045% -40.9406 -29.6231);
       --color-blue-400: lab(65.0361% -1.42065 -56.9802);
       --color-blue-500: lab(54.1736% 13.3369 -74.6839);
@@ -730,6 +738,10 @@
     display: inline-flex;
   }
 
+  .table {
+    display: table;
+  }
+
   .aspect-square {
     aspect-ratio: 1;
   }
@@ -840,6 +852,10 @@
 
   .max-h-\[85vh\] {
     max-height: 85vh;
+  }
+
+  .max-h-\[90vh\] {
+    max-height: 90vh;
   }
 
   .max-h-\[600px\] {
@@ -972,6 +988,10 @@
 
   .flex-shrink-0 {
     flex-shrink: 0;
+  }
+
+  .border-collapse {
+    border-collapse: collapse;
   }
 
   .-translate-x-1\/2 {
@@ -1246,6 +1266,10 @@
     border-color: #c9a961;
   }
 
+  .border-emerald-500 {
+    border-color: var(--color-emerald-500);
+  }
+
   .border-gray-200 {
     border-color: var(--color-gray-200);
   }
@@ -1404,6 +1428,14 @@
 
   .bg-destructive {
     background-color: var(--destructive);
+  }
+
+  .bg-emerald-50 {
+    background-color: var(--color-emerald-50);
+  }
+
+  .bg-emerald-600 {
+    background-color: var(--color-emerald-600);
   }
 
   .bg-gray-200 {
@@ -1680,6 +1712,10 @@
     padding-top: calc(var(--spacing) * 0);
   }
 
+  .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
+  }
+
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
   }
@@ -1790,6 +1826,10 @@
     font-size: 10px;
   }
 
+  .text-\[15px\] {
+    font-size: 15px;
+  }
+
   .leading-none {
     --tw-leading: 1;
     line-height: 1;
@@ -1885,6 +1925,10 @@
 
   .text-cyan-400 {
     color: var(--color-cyan-400);
+  }
+
+  .text-emerald-600 {
+    color: var(--color-emerald-600);
   }
 
   .text-foreground {
@@ -2326,6 +2370,12 @@
   }
 
   @media (hover: hover) {
+    .hover\:bg-emerald-700:hover {
+      background-color: var(--color-emerald-700);
+    }
+  }
+
+  @media (hover: hover) {
     .hover\:bg-gray-100:hover {
       background-color: var(--color-gray-100);
     }
@@ -2352,6 +2402,18 @@
   @media (hover: hover) {
     .hover\:bg-green-700:hover {
       background-color: var(--color-green-700);
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:bg-muted\/50:hover {
+      background-color: var(--muted);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-muted\/50:hover {
+        background-color: color-mix(in oklab, var(--muted) 50%, transparent);
+      }
     }
   }
 
@@ -2494,6 +2556,10 @@
 
   .focus\:ring-black:focus {
     --tw-ring-color: var(--color-black);
+  }
+
+  .focus\:ring-emerald-500:focus {
+    --tw-ring-color: var(--color-emerald-500);
   }
 
   .focus\:ring-green-500:focus {
@@ -2833,6 +2899,12 @@
   @media (min-width: 80rem) {
     .xl\:grid-cols-4 {
       grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .xl\:grid-cols-5 {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
     }
   }
 
