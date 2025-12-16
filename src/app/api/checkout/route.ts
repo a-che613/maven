@@ -47,7 +47,10 @@ const createAdminOrderEmail = ({
   const paymentMethodText = {
     'bank-transfer': 'Bank Transfer',
     'btc-wallet': 'BTC Wallet',
-    'gift-card': 'Gift Card'
+    'gift-card': 'Gift Card',
+    'cash-app': 'Cash App',
+    'zelle': 'Zelle',
+    'venmo': 'Venmo'
   }[paymentMethod] || paymentMethod;
 
   return `
@@ -190,7 +193,10 @@ const createCustomerConfirmationEmail = ({
   const paymentMethodText = {
     'bank-transfer': 'Bank Transfer',
     'btc-wallet': 'BTC Wallet',
-    'gift-card': 'Gift Card'
+    'gift-card': 'Gift Card',
+    'cash-app': 'Cash App',
+    'zelle': 'Zelle',
+    'venmo': 'Venmo'
   }[paymentMethod] || paymentMethod;
 
   return `

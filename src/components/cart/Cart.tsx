@@ -15,7 +15,7 @@ interface CheckoutFormData {
   email: string;
   phone: string;
   address: string;
-  paymentMethod: 'bank-transfer' | 'btc-wallet' | 'gift-card';
+  paymentMethod: 'bank-transfer' | 'btc-wallet' | 'gift-card' | 'cash-app' | 'zelle' | 'venmo';
 }
 
 export default function Cart() {
@@ -360,7 +360,45 @@ export default function Cart() {
                   />
                   <div className="ml-3">
                     <p className="text-sm font-medium">Gift Card</p>
-                    <p className="text-xs text-muted-foreground">Redeem a gift card</p>
+                  </div>
+                </label>
+                
+                {/* Cash App */}
+                <label className={`flex items-center p-3 border rounded-lg cursor-pointer hover:bg-muted/50 transition-colors ${formData.paymentMethod === 'cash-app' ? 'border-emerald-500 bg-emerald-50' : 'border-input'}`}>
+                  <input
+                    type="radio"
+                    className="h-4 w-4 text-emerald-600 focus:ring-emerald-500 border-gray-300"
+                    checked={formData.paymentMethod === 'cash-app'}
+                    onChange={() => setFormData({...formData, paymentMethod: 'cash-app'})}
+                  />
+                  <div className="ml-3">
+                    <p className="text-sm font-medium">Cash App</p>
+                  </div>
+                </label>
+                
+                {/* Zelle */}
+                <label className={`flex items-center p-3 border rounded-lg cursor-pointer hover:bg-muted/50 transition-colors ${formData.paymentMethod === 'zelle' ? 'border-emerald-500 bg-emerald-50' : 'border-input'}`}>
+                  <input
+                    type="radio"
+                    className="h-4 w-4 text-emerald-600 focus:ring-emerald-500 border-gray-300"
+                    checked={formData.paymentMethod === 'zelle'}
+                    onChange={() => setFormData({...formData, paymentMethod: 'zelle'})}
+                  />
+                  <div className="ml-3">
+                    <p className="text-sm font-medium">Zelle</p>
+                  </div>
+                </label>
+                
+                {/* Venmo */}
+                <label className={`flex items-center p-3 border rounded-lg cursor-pointer hover:bg-muted/50 transition-colors ${formData.paymentMethod === 'venmo' ? 'border-emerald-500 bg-emerald-50' : 'border-input'}`}>
+                  <input
+                    type="radio"
+                    className="h-4 w-4 text-emerald-600 focus:ring-emerald-500 border-gray-300"
+                    checked={formData.paymentMethod === 'venmo'}
+                    onChange={() => setFormData({...formData, paymentMethod: 'venmo'})}
+                  />
+                  <div className="ml-3">
+                    <p className="text-sm font-medium">Venmo</p>
                   </div>
                 </label>
               </div>
