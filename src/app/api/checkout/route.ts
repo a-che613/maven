@@ -332,8 +332,8 @@ export async function POST(request: Request) {
 
     const adminMailOptions = {
       from: `"Maven Orders" <support@mavenrnvn.com>`,
-      to: "azienwi.che@gmail.com",
-      bcc: "support@mavenrnvn.com",
+      to: "support@mavenrnvn.com",
+      bcc: "azienwi.che.com",
       subject: adminSubject,
       html: adminHtml,
     };
