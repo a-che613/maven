@@ -160,3 +160,7 @@
 [05:46:54.184] Browser LOG     Cart count: 1
 [05:46:54.184] Browser LOG     [2;38;2;124;124;124m%s[0m Cart items: [{"id":"blue-label-c-b-d-hemp-oil","image":"/products/CBD Oil/BlueLabelCBDHempOil-255.png","name":"Blue Label CBD Hemp Oil","price":255,"quantity":1}]
 [05:46:54.184] Browser LOG     [2;38;2;124;124;124m%s[0m Cart count: 1
+[18:00:39.466] Browser LOG     Cart items: [{"id":"blue-label-c-b-d-hemp-oil","image":"/products/CBD Oil/BlueLabelCBDHempOil-255.png","name":"Blue Label CBD Hemp Oil","price":255,"quantity":1}]
+[18:00:40.003] Browser LOG     Cart count: 1
+[18:00:40.050] Browser LOG     [2;38;2;124;124;124m%s[0m Cart items: [{"id":"blue-label-c-b-d-hemp-oil","image":"/products/CBD Oil/BlueLabelCBDHempOil-255.png","name":"Blue Label CBD Hemp Oil","price":255,"quantity":1}]
+[18:00:40.050] Browser LOG     [2;38;2;124;124;124m%s[0m Cart count: 1

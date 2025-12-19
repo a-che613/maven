@@ -1,0 +1,20 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/about/page": "app/about/page.js",
+  "/alchemy/page": "app/alchemy/page.js",
+  "/api/checkout/route": "app/api/checkout/route.js",
+  "/api/send-confirmation/route": "app/api/send-confirmation/route.js",
+  "/auth/page": "app/auth/page.js",
+  "/blog/page": "app/blog/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/goldies/page": "app/goldies/page.js",
+  "/insiders/page": "app/insiders/page.js",
+  "/page": "app/page.js",
+  "/products/page": "app/products/page.js",
+  "/research/page": "app/research/page.js",
+  "/seeds/page": "app/seeds/page.js",
+  "/seeds/store/page": "app/seeds/store/page.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/store-locator/page": "app/store-locator/page.js"
+}

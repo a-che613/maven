@@ -1,0 +1,20 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/about/page": "/about",
+  "/alchemy/page": "/alchemy",
+  "/api/checkout/route": "/api/checkout",
+  "/api/send-confirmation/route": "/api/send-confirmation",
+  "/auth/page": "/auth",
+  "/blog/page": "/blog",
+  "/favicon.ico/route": "/favicon.ico",
+  "/goldies/page": "/goldies",
+  "/insiders/page": "/insiders",
+  "/page": "/",
+  "/products/page": "/products",
+  "/research/page": "/research",
+  "/seeds/page": "/seeds",
+  "/seeds/store/page": "/seeds/store",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/store-locator/page": "/store-locator"
+}
