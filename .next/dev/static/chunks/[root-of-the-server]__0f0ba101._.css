@@ -779,10 +779,6 @@
     margin-bottom: calc(var(--spacing) * 16);
   }
 
-  .-ml-1 {
-    margin-left: calc(var(--spacing) * -1);
-  }
-
   .ml-3 {
     margin-left: calc(var(--spacing) * 3);
   }
@@ -828,10 +824,6 @@
 
   .inline-flex {
     display: inline-flex;
-  }
-
-  .table {
-    display: table;
   }
 
   .aspect-square {
@@ -2180,16 +2172,8 @@
     opacity: .2;
   }
 
-  .opacity-25 {
-    opacity: .25;
-  }
-
   .opacity-70 {
     opacity: .7;
-  }
-
-  .opacity-75 {
-    opacity: .75;
   }
 
   .shadow {

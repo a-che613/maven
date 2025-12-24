@@ -7,30 +7,35 @@ export default function StoreLocatorPage() {
 
   const stores = [
     {
-      name: "365 Recreational",
-      address: "2750 Mendocino Ave, Santa Rosa, 95403",
-      phone: "(707) 999-9420",
+      name: "Google Voice Support",
+      address: "Available for assistance",
+      phone: "(469) 340-0915",
     },
-    {
-      name: "420 Central - Costa Mesa",
-      address: "1990 Harbor Blvd, Costa Mesa, 92627",
-      phone: "(949) 432-5070",
-    },
-    {
-      name: "420 Central - Santa Ana",
-      address: "420 W Central Ave, Santa Ana, 92607",
-      phone: "(714) 540-4420",
-    },
-    {
-      name: "420 Kingdom Delivery Service",
-      address: "Bakersfield, 93301",
-      phone: "(661) 777 - 5464",
-    },
-    {
-      name: "4Twenty Market - Oakland",
-      address: "8440 Enterprise Way, Oakland, 94621",
-      phone: "(800) 420-3216",
-    },
+    // {
+    //   name: "365 Recreational",
+    //   address: "2750 Mendocino Ave, Santa Rosa, 95403",
+    //   phone: "(707) 999-9420",
+    // },
+    // {
+    //   name: "420 Central - Costa Mesa",
+    //   address: "1990 Harbor Blvd, Costa Mesa, 92627",
+    //   phone: "(949) 432-5070",
+    // },
+    // {
+    //   name: "420 Central - Santa Ana",
+    //   address: "420 W Central Ave, Santa Ana, 92607",
+    //   phone: "(714) 540-4420",
+    // },
+    // {
+    //   name: "420 Kingdom Delivery Service",
+    //   address: "Bakersfield, 93301",
+    //   phone: "(661) 777 - 5464",
+    // },
+    // {
+    //   name: "4Twenty Market - Oakland",
+    //   address: "8440 Enterprise Way, Oakland, 94621",
+    //   phone: "(800) 420-3216",
+    // },
   ];
 
   return (
